@@ -1,0 +1,18 @@
+                        Preface
+   When press <Enter> key ,the standard io gets '\r','n'
+===========================================================
+
+1. cin.get();it only gets '\n' and ignoring the '\r';
+2. cin>>; however it ignores all the '\r','\n';
+
+			example
+===========================================================
+1. cin>>a;                2. a=cin.get();
+   cin>>b;                   b=cin.get();
+   cout<<a<<b;		     cout<<a<<b;
+
+  input: 1 <Enter>	   input: 1 <Enter> //when comes here
+	 2 <Enter>    		  2 <Enter> //the program 
+  output:12		   output:1 <'\n'>  //just return
+         
+    
